@@ -25,7 +25,7 @@ const Home = () => {
     setLoading(true); // ⬅️ Email send aagum pothu loading start!
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/send-email",
+        "https://multiple-email-send.onrender.com/api/send-email",
         { email }
       );
 
