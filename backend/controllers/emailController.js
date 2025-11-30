@@ -34,10 +34,10 @@ export const sendEmails = async (req, res) => {
     };
 
     // ⭐ Send both mails in parallel — FAST 🚀
-    await Promise.all([
-      transporter.sendMail(adminMail),
-      transporter.sendMail(userMail),
-    ]);
+    // await Promise.all([
+    //   transporter.sendMail(adminMail),
+    //   transporter.sendMail(userMail),
+    // ]);
 
     //await transporter.sendMail(adminMail);
 
